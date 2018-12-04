@@ -1,0 +1,21 @@
+
+<div data-bind="scope: 'first-component'">
+    <h2 data-bind="text: title"></h2>
+    <h2>THIS TEXT IS STATIC!!!</h2>
+</div>
+
+<script type="text/x-magento-init">
+   {
+       "*": {
+           "Magento_Ui/js/core/app": {
+               "components": {
+                   "first-component": {
+                       "component": "Home_UiComponent/js/component",
+                       "title": "Good buy, World!"
+                   }
+               }
+           }
+       }
+   }
+
+</script>
